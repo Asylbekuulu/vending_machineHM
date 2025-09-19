@@ -1,0 +1,28 @@
+package model;
+
+public class BillAcceptor implements MoneyAcceptor {
+    private int amountOfBill;
+
+    public BillAcceptor(int amount) {
+        this.amountOfBill = amount;
+    }
+
+    public int getAmount() {
+        return amountOfBill;
+    }
+
+    public void setAmount(int amount) {
+        this.amountOfBill = amount;
+    }
+
+    @Override
+    public void paymentMethod() {
+        setAmount(getAmount() + 10);
+        System.out.println(("Вы пополнили баланс на 10 сом"));
+    }
+
+    @Override
+    public String getMessage() {
+        return "Денег на сумму: ";
+    }
+}

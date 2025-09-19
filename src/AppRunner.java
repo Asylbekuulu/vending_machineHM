@@ -35,13 +35,11 @@ public class AppRunner {
     private void startSimulation() {
         print("В автомате доступны:");
         showProducts(products);
-
         print("Монет на сумму: " + coinAcceptor.getAmount());
 
         UniversalArray<Product> allowProducts = new UniversalArrayImpl<>();
         allowProducts.addAll(getAllowedProducts().toArray());
         chooseAction(allowProducts);
-
     }
 
     private UniversalArray<Product> getAllowedProducts() {

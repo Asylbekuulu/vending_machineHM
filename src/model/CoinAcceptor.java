@@ -20,4 +20,9 @@ public class CoinAcceptor implements MoneyAcceptor {
         setAmount(getAmount() + 10);
         System.out.println(("Вы пополнили баланс на 10 монет"));
     }
+
+    @Override
+    public String getMessage() {
+        return "Монет на сумму: ";
+    }
 }

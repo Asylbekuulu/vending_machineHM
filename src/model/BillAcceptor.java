@@ -20,4 +20,9 @@ public class BillAcceptor implements MoneyAcceptor {
         setAmount(getAmount() + 10);
         System.out.println(("Вы пополнили баланс на 10 сом"));
     }
+
+    @Override
+    public String getMessage() {
+        return "Денег на сумму: ";
+    }
 }

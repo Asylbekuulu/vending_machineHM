@@ -17,6 +17,7 @@ public class BillAcceptor implements MoneyAcceptor {
 
     @Override
     public void paymentMethod() {
-
+        setAmount(getAmount() + 10);
+        System.out.println(("Вы пополнили баланс на 10 сом"));
     }
 }

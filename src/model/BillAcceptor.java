@@ -1,6 +1,6 @@
 package model;
 
-public class BillAcceptor {
+public class BillAcceptor implements MoneyAcceptor {
     private int amountOfBill;
 
     public BillAcceptor(int amount) {
@@ -13,5 +13,10 @@ public class BillAcceptor {
 
     public void setAmount(int amount) {
         this.amountOfBill = amount;
+    }
+
+    @Override
+    public void paymentMethod() {
+
     }
 }
